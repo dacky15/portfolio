@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* ===========================================================================
+   THEME TOKENS
+   Change --accent to re-brand the whole site (default = bold red).
+   =========================================================================== */
+@theme {
+  --color-accent: #ff2a2a;
+  --color-ink: #0a0a0a;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-hand: 'Caveat', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #ff2a2a;
+  color: #fff;
+}
+
+/* Floating animation utility (used on decorative bits) */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+/* AOS "drop-bounce" custom effect (used by the ID badge) */
+[data-aos="drop-bounce"] { opacity: 0; }
+[data-aos="drop-bounce"].aos-animate {
+  animation: dropBounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1) forwards;
+}
+@keyframes dropBounce {
+  0%   { transform: translateY(-300px); opacity: 0; }
+  50%  { transform: translateY(0); opacity: 1; }
+  65%  { transform: translateY(-40px); opacity: 1; }
+  80%  { transform: translateY(0); opacity: 1; }
+  90%  { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Animated gradient backdrop — stands in for the hero video until you add one */
+@keyframes heroPan {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hero-fallback {
+  background: linear-gradient(120deg, #1a0000, #ff2a2a, #2a0a0a, #000, #3a0000);
+  background-size: 300% 300%;
+  animation: heroPan 14s ease infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, [data-aos] { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  html { scroll-behavior: auto; }
+}
