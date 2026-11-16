@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Preloader from './components/Preloader'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -9,11 +10,15 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
+  // Flips to true once the red preloader has slid away, so the hero intro
+  // (headline + narrated reel) starts when the visitor can actually see it.
+  const [introDone, setIntroDone] = useState(false)
+
   return (
     <>
-      <Preloader />
+      <Preloader onDone={() => setIntroDone(true)} />
       <Navbar />
-      <Hero />
+      <Hero introDone={introDone} />
       <About />
       <Projects />
       <Experience />

@@ -31,7 +31,7 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
           <p className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50">
             Hi, my name is{' '}
-            <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">
+            <span className="text-black text-xl font-black ml-1 tracking-wide uppercase">
               {profile.fullName}
             </span>
             , {profile.aboutText}

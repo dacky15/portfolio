@@ -23,12 +23,13 @@ export default function Contact() {
     <section ref={ref} id="contact" className="bg-[#0a0a0a] w-full min-h-screen relative overflow-hidden flex items-end pt-32 border-t border-gray-900">
       {/* Huge background text */}
       <motion.div style={{ y }} className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-16 md:pt-12">
-        <h1
+        <div
+          aria-hidden="true"
           className="text-[25vw] leading-[0.75] font-black text-white uppercase tracking-tighter select-none scale-y-[1.6] origin-top"
           style={{ fontFamily: "'Arial Black', Impact, sans-serif" }}
         >
           Contact
-        </h1>
+        </div>
       </motion.div>
 
       {/* Form panel */}

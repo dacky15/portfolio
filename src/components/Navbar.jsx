@@ -66,7 +66,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={`md:hidden absolute top-full left-0 w-full overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-96 py-4 opacity-100 bg-[#ff2a2a] shadow-2xl' : 'max-h-0 opacity-0'
+          isOpen ? 'max-h-[32rem] py-4 opacity-100 bg-[#ff2a2a] shadow-2xl' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="flex flex-col px-6 space-y-4">

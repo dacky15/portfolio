@@ -22,8 +22,7 @@ function TagCard({ step, className, aosType, aosDelay, pathLength, containerRef 
     const containerRect = containerRef.current.getBoundingClientRect()
     const triggerY = cardRect.top - containerRect.top + 50
     const lineTipY = latest * containerRect.height
-    if (lineTipY >= triggerY && !isActive) setIsActive(true)
-    else if (lineTipY < triggerY && isActive) setIsActive(false)
+    setIsActive(lineTipY >= triggerY)
   })
 
   return (

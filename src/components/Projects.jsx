@@ -31,19 +31,21 @@ function ProjectCard({ project, index }) {
         </ul>
       )}
 
-      <div className="flex flex-wrap gap-3 mt-7 relative z-10">
-        {project.links.map((l) => (
-          <a
-            key={l.href}
-            href={l.href}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 bg-white/5 border border-white/15 rounded-full px-5 py-2 text-sm font-semibold text-white/90 hover:border-[#ff2a2a]/60 hover:bg-[#ff2a2a]/10 transition-all duration-300"
-          >
-            {l.label} <span aria-hidden="true">↗</span>
-          </a>
-        ))}
-      </div>
+      {project.links?.length > 0 && (
+        <div className="flex flex-wrap gap-3 mt-7 relative z-10">
+          {project.links.map((l) => (
+            <a
+              key={l.href}
+              href={l.href}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 bg-white/5 border border-white/15 rounded-full px-5 py-2 text-sm font-semibold text-white/90 hover:border-[#ff2a2a]/60 hover:bg-[#ff2a2a]/10 transition-all duration-300"
+            >
+              {l.label} <span aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

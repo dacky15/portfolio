@@ -3,16 +3,26 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { profile } from '../data/content'
 
 // Red shutter with the name "filling up", then the panel slides up off-screen.
-export default function Preloader() {
+export default function Preloader({ onDone }) {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
+    // Keep the page from scrolling underneath the shutter
+    document.body.style.overflow = 'hidden'
     const timer = setTimeout(() => setIsLoading(false), 2200)
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(timer)
+      document.body.style.overflow = ''
+    }
   }, [])
 
   return (
-    <AnimatePresence>
+    <AnimatePresence
+      onExitComplete={() => {
+        document.body.style.overflow = ''
+        onDone?.()
+      }}
+    >
       {isLoading && (
         <motion.div
           key="preloader"
