@@ -142,10 +142,9 @@ export const projects = [
       'Moved the AI coach server-side with per-user cost limits before launch',
       'Closed testing with 12+ testers, then production rollout',
     ],
-    // Add these back once the repo is public on GitHub (they 404 right now):
-    //   { label: 'Case study', href: 'https://github.com/dacky15/courtlegacy-case-study' },
-    //   { label: 'PRD', href: 'https://github.com/dacky15/courtlegacy-case-study/blob/main/docs/PRD.md' },
     links: [
+      { label: 'Case study', href: 'https://github.com/dacky15/courtlegacy-case-study' },
+      { label: 'PRD', href: 'https://github.com/dacky15/courtlegacy-case-study/blob/main/docs/PRD.md' },
       { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.darshan.courtlegacy' },
     ],
   },
@@ -154,18 +153,14 @@ export const projects = [
     title: 'AI Scheduling Assistant',
     role: 'PM + builder',
     text: 'Organisers describe a change in one sentence; Claude reschedules the tournament through tools, and a rules engine guarantees the day stays playable. Scored on a 30-case code-graded eval.',
-    // Repo is private or missing (404) — add back once it's public:
-    //   { label: 'Repo + eval', href: 'https://github.com/dacky15/ai-scheduling-assistant' }
-    links: [],
+    links: [{ label: 'Repo + eval', href: 'https://github.com/dacky15/ai-scheduling-assistant' }],
   },
   {
     tag: 'B2B internal tool',
     title: 'Atoma HR Portal',
     role: 'Product owner + developer · Cuatro Labs internship',
     text: 'HR for a field workforce: selfie + GPS check-in, live staff map, leave, expenses, assets and payroll. Built in about three weeks.',
-    // Repo is private or missing (404) — add back once it's public:
-    //   { label: 'Case study', href: 'https://github.com/dacky15/atoma-hr-portal' }
-    links: [],
+    links: [{ label: 'Case study', href: 'https://github.com/dacky15/atoma-hr-portal' }],
   },
 ]
 
