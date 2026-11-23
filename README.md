@@ -12,4 +12,4 @@ npm run build    # static site in dist/
 
 All copy lives in [`src/data/content.js`](src/data/content.js), so content can be updated without touching components.
 
-Projects featured: [CourtLegacy](https://github.com/Darshan00027/courtlegacy) · [AI Scheduling Assistant](https://github.com/Darshan00027/ai-scheduling-assistant) · [Atoma HR Portal](https://github.com/Darshan00027/atoma-hr-portal)
+Projects featured: [CourtLegacy](https://github.com/dacky15/courtlegacy-case-study) · [AI Scheduling Assistant](https://github.com/dacky15/ai-scheduling-assistant) · [Atoma HR Portal](https://github.com/dacky15/atoma-hr-portal)

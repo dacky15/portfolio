@@ -27,7 +27,7 @@ export const profile = {
   socials: {
     linkedin: 'https://www.linkedin.com/in/darshanpatel15',
     instagram: '', // optional
-    github: 'https://github.com/Darshan00027',
+    github: 'https://github.com/dacky15',
   },
 
   // ---- HERO VIDEO --------------------------------------------------------
@@ -143,8 +143,8 @@ export const projects = [
       'Closed testing with 12+ testers, then production rollout',
     ],
     // Add these back once the repo is public on GitHub (they 404 right now):
-    //   { label: 'Case study', href: 'https://github.com/Darshan00027/courtlegacy' },
-    //   { label: 'PRD', href: 'https://github.com/Darshan00027/courtlegacy/blob/main/docs/PRD.md' },
+    //   { label: 'Case study', href: 'https://github.com/dacky15/courtlegacy-case-study' },
+    //   { label: 'PRD', href: 'https://github.com/dacky15/courtlegacy-case-study/blob/main/docs/PRD.md' },
     links: [
       { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.darshan.courtlegacy' },
     ],
@@ -155,7 +155,7 @@ export const projects = [
     role: 'PM + builder',
     text: 'Organisers describe a change in one sentence; Claude reschedules the tournament through tools, and a rules engine guarantees the day stays playable. Scored on a 30-case code-graded eval.',
     // Repo is private or missing (404) — add back once it's public:
-    //   { label: 'Repo + eval', href: 'https://github.com/Darshan00027/ai-scheduling-assistant' }
+    //   { label: 'Repo + eval', href: 'https://github.com/dacky15/ai-scheduling-assistant' }
     links: [],
   },
   {
@@ -164,7 +164,7 @@ export const projects = [
     role: 'Product owner + developer · Cuatro Labs internship',
     text: 'HR for a field workforce: selfie + GPS check-in, live staff map, leave, expenses, assets and payroll. Built in about three weeks.',
     // Repo is private or missing (404) — add back once it's public:
-    //   { label: 'Case study', href: 'https://github.com/Darshan00027/atoma-hr-portal' }
+    //   { label: 'Case study', href: 'https://github.com/dacky15/atoma-hr-portal' }
     links: [],
   },
 ]
