@@ -22,7 +22,7 @@ export const profile = {
 
   location: 'Gandhinagar, Gujarat',
   email: 'darshanpatel15105@gmail.com',
-  resumeUrl: '', // put resume.pdf in /public and set '/resume.pdf' to show the Resume link
+  resumeUrl: '/resume.pdf',
 
   socials: {
     linkedin: 'https://www.linkedin.com/in/darshanpatel15',
